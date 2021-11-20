@@ -12,7 +12,7 @@
         android:text="Hello World!"
         android:gravity="center"
         android:textSize="39sp"
-        android:textColor="#ffff00"
+        android:textColor="#ff00ff"
         android:background="#0000ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
