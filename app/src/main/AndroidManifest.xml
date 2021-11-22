@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alisafarzadeh.kotlincode">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCode">
         <activity
+            android:name=".ShowNewsActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CatalogActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
