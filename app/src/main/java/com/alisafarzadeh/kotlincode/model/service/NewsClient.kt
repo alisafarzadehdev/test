@@ -7,9 +7,15 @@ import retrofit2.http.Query
 
 interface NewsClient {
     @GET("search")
-    fun getBaseJson( // API key should always be constant
+    suspend fun getBaseJson( // API key should always be constant
         @Query("api-key") apiKey: String?,  // Type should always be "Article" for the purpose of this demo
         @Query("type") type: String?,  // Show-blocks should always be "Body" to get the main text of an article
         @Query("show-blocks") showBlocks: String?
-    ): Call<News>
+    ): News
+
+    /*
+    @GET("foo")
+    suspend fun getFoo(): List<Foo>
+
+     */
 }

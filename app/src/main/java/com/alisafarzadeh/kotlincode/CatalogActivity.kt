@@ -36,7 +36,6 @@ class CatalogActivity : AppCompatActivity() {
         setSupportActionBar(bar)
 
 
-        makeBaseNetworkCall()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -58,6 +57,7 @@ class CatalogActivity : AppCompatActivity() {
     }
 
 
+    /*
     private fun makeBaseNetworkCall() {
         val listView = findViewById<ListView>(R.id.list)
 
@@ -99,6 +99,8 @@ class CatalogActivity : AppCompatActivity() {
         })
     }
 
+
+     */
 
     private fun hideSpinnerFromCatalog() {
         val spinner = findViewById<ProgressBar>(R.id.loading_spinner)
